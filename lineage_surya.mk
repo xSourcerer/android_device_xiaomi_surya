@@ -22,4 +22,7 @@ PRODUCT_MANUFACTURER := Xiaomi
 
 BUILD_FINGERPRINT := POCO/surya_global/surya:12/RKQ1.211019.001/V14.0.2.0.SJGMIXM:user/release-keys
 
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRIVATE_BUILD_DESC="surya_global-user 12 RKQ1.211019.001 V14.0.2.0.SJGMIXM release-keys"
+
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
