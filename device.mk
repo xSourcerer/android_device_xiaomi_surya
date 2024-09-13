@@ -26,6 +26,9 @@ PRODUCT_COPY_FILES += \
 # XiaomiParts
 $(call inherit-product, device/xiaomi/surya/parts/parts.mk)
 
+# MiuiCamera
+$(call inherit-product-if-exists, vendor/xiaomi/miuicamera/config.mk)
+
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService-Soong \
@@ -111,9 +114,6 @@ PRODUCT_COPY_FILES += \
 # Camera
 PRODUCT_PACKAGES += \
     libpiex_shim
-
-# Camera
-$(call inherit-product-if-exists, device/xiaomi/surya-miuicamera/config.mk)
 
 # Dex/ART optimization
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
